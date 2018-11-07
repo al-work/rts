@@ -1,0 +1,85 @@
+body {
+    background: url(../img/bg.jpg) no-repeat;
+}
+form#cvForm {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 40px;
+}
+.formWraper {
+    width: 480px;
+    max-width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    margin-top: 100px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.75);
+    padding: 25px 40px;
+}
+h1 {
+    text-align: center;
+}
+input#name,
+input#file,
+input#email,
+textarea#text{
+    background-repeat: no-repeat;
+    background-position: 12px 7px;
+    padding-left: 50px;
+    position: relative;
+    font-size: 12px;
+}
+input#name{
+    background-image: url(../img/user.png);
+}
+input#file{
+    background-image: url(../img/file.png);
+}
+input#email{
+    background-image: url(../img/letter.png);
+}
+textarea#text{
+    background-image: url(../img/message.png);
+}
+
+input#name:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 1px solid;
+    height: 100%;
+    width: 6px;
+}
+button.btn.btn-primary {
+    width: 100%;
+    margin-top: 20px;
+    background: #0d71d7;
+}
+button.btn.btn-primary {
+    width: 100%;
+    margin-top: 20px;
+    background: #0d71d7;
+}
+
+div.formWraper > p {
+    font-size: 11px;
+    color: #767676;
+}
+
+div.formWraper > h1 {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+@media (max-width: 468px) {
+    form#cvForm{
+        padding: 0;
+    }
+}
+@media (max-width: 350px) {
+    .formWraper{
+        padding: 25px 20px;
+    }
+}
